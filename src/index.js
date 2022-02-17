@@ -7,7 +7,7 @@ import {Provider} from 'react-redux'
 import { combineReducers,  createStore, applyMiddleware} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import myFirstReducer from './components/reducer';
-import { mySaga } from './components/saga';
+import mySaga from './components/saga';
 
 // Declarations
 const sagaMiddleware = createSagaMiddleware();
@@ -24,7 +24,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// // If you want to start measuring performance in your app, pass a function
-// // to log results (for example: reportWebVitals(console.log))
-// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
